@@ -21,7 +21,7 @@ function transform($e, xValue, yValue, scaleValue, rotationValue, percent) {
   const x = xValue || 0;
   const y = yValue || 0;
   const scale = scaleValue || 1;
-  const unit = percent ? '%' : 'px';~
+  const unit = percent ? '%' : 'px';
   const rotation = rotationValue || 0;
 
   const transfromString = `translate(${
