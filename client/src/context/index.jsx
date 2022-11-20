@@ -27,7 +27,7 @@ export const GlobalContextProvider = ({ children }) =>  {
         updateCurrentWalletAddress);
     }, [])
 
-    //* Set the smart contract the provider to the state
+    //* Set the smart contract and the provider to the state
     useEffect(() => {
         const setSmartContractAndProvider = async () => {
             const web3Modal = new Web3Modal();
