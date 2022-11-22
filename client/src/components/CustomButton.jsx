@@ -1,8 +1,16 @@
 import React from 'react'
 
-const CustomButton = () => {
+import styles from '../styles'
+
+const CustomButton = ({ title, handleClick, restStyles }) => {
   return (
-    <div>CustomButton</div>
+    <button
+      type="button"
+      className={`${styles.btn} ${restStyles}`}
+      onClick={handleClick}
+    >
+      {title}
+    </button>
   )
 }
 
